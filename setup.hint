@@ -1,0 +1,8 @@
+category: Audio Games OCaml X11
+requires: cygwin libSDL12 libSDL_image libSDL_mixer libSDL_ttf ocaml ocaml-lablgl
+sdesc: "OCaml SDL bindings"
+ldesc: "The goal of OCamlSDL is to provide access the multimedia 
+hardware in the ML programming language with the help of the SDL 
+library. The Simple DirectMedia Layer is a generic API that provides low 
+level access to audio, keyboard, mouse, and display framebuffer across 
+multiple platforms."

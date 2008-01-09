@@ -1,0 +1,129 @@
+ocaml-sdl
+------------------------------------------
+The goal of OCamlSDL is to provide access the multimedia hardware
+in the ML programming language with the help of the SDL library.
+The Simple DirectMedia Layer is a generic API that provides low
+level access to audio, keyboard, mouse, and display framebuffer across
+multiple platforms.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  libSDL12-1.2.12-1
+  libSDL_image-1.2.6-1
+  libSDL_mixer-1.2.8-1
+  libSDL_ttf-2.0.9-1
+  ocaml-3.10.0-1
+  ocaml-lablgl-1.03-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  ocaml-findlib-1.2.1-1
+
+Canonical website:
+  http://ocamlsdl.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/ocamlsdl/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-sdl-0.7.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-sdl-0.7.2-X.cygport all
+
+This will create:
+  /usr/src/ocaml-sdl-0.7.2-X-src.tar.bz2
+  /usr/src/ocaml-sdl-0.7.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/3.10/sdl/META
+  /usr/lib/ocaml/3.10/sdl/libsdlloaderstub.a
+  /usr/lib/ocaml/3.10/sdl/libsdlmixerstub.a
+  /usr/lib/ocaml/3.10/sdl/libsdlstub.a
+  /usr/lib/ocaml/3.10/sdl/libsdlttfstub.a
+  /usr/lib/ocaml/3.10/sdl/sdl.a
+  /usr/lib/ocaml/3.10/sdl/sdl.cma
+  /usr/lib/ocaml/3.10/sdl/sdl.cmi
+  /usr/lib/ocaml/3.10/sdl/sdl.cmx
+  /usr/lib/ocaml/3.10/sdl/sdl.cmxa
+  /usr/lib/ocaml/3.10/sdl/sdl.mli
+  /usr/lib/ocaml/3.10/sdl/sdlcdrom.cmi
+  /usr/lib/ocaml/3.10/sdl/sdlcdrom.cmx
+  /usr/lib/ocaml/3.10/sdl/sdlcdrom.mli
+  /usr/lib/ocaml/3.10/sdl/sdlevent.cmi
+  /usr/lib/ocaml/3.10/sdl/sdlevent.cmx
+  /usr/lib/ocaml/3.10/sdl/sdlevent.mli
+  /usr/lib/ocaml/3.10/sdl/sdlgl.cmi
+  /usr/lib/ocaml/3.10/sdl/sdlgl.cmx
+  /usr/lib/ocaml/3.10/sdl/sdlgl.mli
+  /usr/lib/ocaml/3.10/sdl/sdljoystick.cmi
+  /usr/lib/ocaml/3.10/sdl/sdljoystick.cmx
+  /usr/lib/ocaml/3.10/sdl/sdljoystick.mli
+  /usr/lib/ocaml/3.10/sdl/sdlkey.cmi
+  /usr/lib/ocaml/3.10/sdl/sdlkey.cmx
+  /usr/lib/ocaml/3.10/sdl/sdlkey.mli
+  /usr/lib/ocaml/3.10/sdl/sdlloader.a
+  /usr/lib/ocaml/3.10/sdl/sdlloader.cma
+  /usr/lib/ocaml/3.10/sdl/sdlloader.cmi
+  /usr/lib/ocaml/3.10/sdl/sdlloader.cmx
+  /usr/lib/ocaml/3.10/sdl/sdlloader.cmxa
+  /usr/lib/ocaml/3.10/sdl/sdlloader.mli
+  /usr/lib/ocaml/3.10/sdl/sdlmixer.a
+  /usr/lib/ocaml/3.10/sdl/sdlmixer.cma
+  /usr/lib/ocaml/3.10/sdl/sdlmixer.cmi
+  /usr/lib/ocaml/3.10/sdl/sdlmixer.cmx
+  /usr/lib/ocaml/3.10/sdl/sdlmixer.cmxa
+  /usr/lib/ocaml/3.10/sdl/sdlmixer.mli
+  /usr/lib/ocaml/3.10/sdl/sdlmouse.cmi
+  /usr/lib/ocaml/3.10/sdl/sdlmouse.cmx
+  /usr/lib/ocaml/3.10/sdl/sdlmouse.mli
+  /usr/lib/ocaml/3.10/sdl/sdltimer.cmi
+  /usr/lib/ocaml/3.10/sdl/sdltimer.cmx
+  /usr/lib/ocaml/3.10/sdl/sdltimer.mli
+  /usr/lib/ocaml/3.10/sdl/sdlttf.a
+  /usr/lib/ocaml/3.10/sdl/sdlttf.cma
+  /usr/lib/ocaml/3.10/sdl/sdlttf.cmi
+  /usr/lib/ocaml/3.10/sdl/sdlttf.cmx
+  /usr/lib/ocaml/3.10/sdl/sdlttf.cmxa
+  /usr/lib/ocaml/3.10/sdl/sdlttf.mli
+  /usr/lib/ocaml/3.10/sdl/sdlvideo.cmi
+  /usr/lib/ocaml/3.10/sdl/sdlvideo.cmx
+  /usr/lib/ocaml/3.10/sdl/sdlvideo.mli
+  /usr/lib/ocaml/3.10/sdl/sdlwm.cmi
+  /usr/lib/ocaml/3.10/sdl/sdlwm.cmx
+  /usr/lib/ocaml/3.10/sdl/sdlwm.mli
+  /usr/lib/ocaml/3.10/stublibs/dllsdlloaderstub.so
+  /usr/lib/ocaml/3.10/stublibs/dllsdlloaderstub.so.owner
+  /usr/lib/ocaml/3.10/stublibs/dllsdlmixerstub.so
+  /usr/lib/ocaml/3.10/stublibs/dllsdlmixerstub.so.owner
+  /usr/lib/ocaml/3.10/stublibs/dllsdlstub.so
+  /usr/lib/ocaml/3.10/stublibs/dllsdlstub.so.owner
+  /usr/lib/ocaml/3.10/stublibs/dllsdlttfstub.so
+  /usr/lib/ocaml/3.10/stublibs/dllsdlttfstub.so.owner
+  /usr/share/doc/ocaml-sdl-0.7.2/AUTHORS
+  /usr/share/doc/ocaml-sdl-0.7.2/COPYING
+  /usr/share/doc/ocaml-sdl-0.7.2/INSTALL
+  /usr/share/doc/ocaml-sdl-0.7.2/NEWS
+  /usr/share/doc/ocaml-sdl-0.7.2/README
+
+------------------
+
+Port Notes:
+
+----- version 0.7.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
