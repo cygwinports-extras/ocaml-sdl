@@ -4,7 +4,7 @@ inherit ocaml
 DESCRIPTION="OCaml SDL bindings"
 HOMEPAGE="http://ocamlsdl.sourceforge.net/"
 SRC_URI="mirror://sourceforge/ocamlsdl/${ORIG_PN}-${PV}.tar.gz"
-PATCH_URI="0.7.2-no-undefined.patch"
+PATCH_URI="http://patch-tracker.debian.org/patch/series/dl/ocamlsdl/0.7.2-11/sdltimer-delay-fix"
 
 src_compile() {
 	lndirs

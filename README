@@ -7,21 +7,23 @@ level access to audio, keyboard, mouse, and display framebuffer across
 multiple platforms.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libSDL1.2_0-1.2.13-2
-  libSDL_image1.2_0-1.2.7-1
-  libSDL_mixer1.2_0-1.2.8-2
-  libSDL_ttf2.0_0-2.0.9-2
-  ocaml-3.10.2-1
-  ocaml-lablgl-1.03-1
+  cygwin-1.7.1-1
+  libgcc1-4.3.4-3
+  libSDL1.2_0-1.2.14-1
+  libSDL_image1.2_0-1.2.10-1
+  libSDL_mixer1.2_0-1.2.11-1
+  libSDL_ttf2.0_0-2.0.9-10
+  ocaml-3.11.2-1
+  ocaml-lablgl-1.04-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  binutils-20080624-2
-  cygport-0.4.3-1
-  gcc-core-3.4.4-3
+  binutils-2.19.51-1
+  cygport-0.9.80-1
+  flexdll-0.20-1
+  gcc4-core-4.3.4-3
   make-3.81-2
-  ocaml-findlib-1.2.2-1
+  ocaml-findlib-1.2.5-1
 
 Canonical website:
   http://ocamlsdl.sourceforge.net/
@@ -44,87 +46,10 @@ This will create:
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/lib/ocaml/3.10/sdl/META
-  /usr/lib/ocaml/3.10/sdl/libsdlloaderstub.a
-  /usr/lib/ocaml/3.10/sdl/libsdlmixerstub.a
-  /usr/lib/ocaml/3.10/sdl/libsdlstub.a
-  /usr/lib/ocaml/3.10/sdl/libsdlttfstub.a
-  /usr/lib/ocaml/3.10/sdl/sdl.a
-  /usr/lib/ocaml/3.10/sdl/sdl.cma
-  /usr/lib/ocaml/3.10/sdl/sdl.cmi
-  /usr/lib/ocaml/3.10/sdl/sdl.cmx
-  /usr/lib/ocaml/3.10/sdl/sdl.cmxa
-  /usr/lib/ocaml/3.10/sdl/sdl.mli
-  /usr/lib/ocaml/3.10/sdl/sdlcdrom.cmi
-  /usr/lib/ocaml/3.10/sdl/sdlcdrom.cmx
-  /usr/lib/ocaml/3.10/sdl/sdlcdrom.mli
-  /usr/lib/ocaml/3.10/sdl/sdlevent.cmi
-  /usr/lib/ocaml/3.10/sdl/sdlevent.cmx
-  /usr/lib/ocaml/3.10/sdl/sdlevent.mli
-  /usr/lib/ocaml/3.10/sdl/sdlgl.cmi
-  /usr/lib/ocaml/3.10/sdl/sdlgl.cmx
-  /usr/lib/ocaml/3.10/sdl/sdlgl.mli
-  /usr/lib/ocaml/3.10/sdl/sdljoystick.cmi
-  /usr/lib/ocaml/3.10/sdl/sdljoystick.cmx
-  /usr/lib/ocaml/3.10/sdl/sdljoystick.mli
-  /usr/lib/ocaml/3.10/sdl/sdlkey.cmi
-  /usr/lib/ocaml/3.10/sdl/sdlkey.cmx
-  /usr/lib/ocaml/3.10/sdl/sdlkey.mli
-  /usr/lib/ocaml/3.10/sdl/sdlloader.a
-  /usr/lib/ocaml/3.10/sdl/sdlloader.cma
-  /usr/lib/ocaml/3.10/sdl/sdlloader.cmi
-  /usr/lib/ocaml/3.10/sdl/sdlloader.cmx
-  /usr/lib/ocaml/3.10/sdl/sdlloader.cmxa
-  /usr/lib/ocaml/3.10/sdl/sdlloader.mli
-  /usr/lib/ocaml/3.10/sdl/sdlmixer.a
-  /usr/lib/ocaml/3.10/sdl/sdlmixer.cma
-  /usr/lib/ocaml/3.10/sdl/sdlmixer.cmi
-  /usr/lib/ocaml/3.10/sdl/sdlmixer.cmx
-  /usr/lib/ocaml/3.10/sdl/sdlmixer.cmxa
-  /usr/lib/ocaml/3.10/sdl/sdlmixer.mli
-  /usr/lib/ocaml/3.10/sdl/sdlmouse.cmi
-  /usr/lib/ocaml/3.10/sdl/sdlmouse.cmx
-  /usr/lib/ocaml/3.10/sdl/sdlmouse.mli
-  /usr/lib/ocaml/3.10/sdl/sdltimer.cmi
-  /usr/lib/ocaml/3.10/sdl/sdltimer.cmx
-  /usr/lib/ocaml/3.10/sdl/sdltimer.mli
-  /usr/lib/ocaml/3.10/sdl/sdlttf.a
-  /usr/lib/ocaml/3.10/sdl/sdlttf.cma
-  /usr/lib/ocaml/3.10/sdl/sdlttf.cmi
-  /usr/lib/ocaml/3.10/sdl/sdlttf.cmx
-  /usr/lib/ocaml/3.10/sdl/sdlttf.cmxa
-  /usr/lib/ocaml/3.10/sdl/sdlttf.mli
-  /usr/lib/ocaml/3.10/sdl/sdlvideo.cmi
-  /usr/lib/ocaml/3.10/sdl/sdlvideo.cmx
-  /usr/lib/ocaml/3.10/sdl/sdlvideo.mli
-  /usr/lib/ocaml/3.10/sdl/sdlwm.cmi
-  /usr/lib/ocaml/3.10/sdl/sdlwm.cmx
-  /usr/lib/ocaml/3.10/sdl/sdlwm.mli
-  /usr/lib/ocaml/3.10/stublibs/dllsdlloaderstub.so
-  /usr/lib/ocaml/3.10/stublibs/dllsdlloaderstub.so.owner
-  /usr/lib/ocaml/3.10/stublibs/dllsdlmixerstub.so
-  /usr/lib/ocaml/3.10/stublibs/dllsdlmixerstub.so.owner
-  /usr/lib/ocaml/3.10/stublibs/dllsdlstub.so
-  /usr/lib/ocaml/3.10/stublibs/dllsdlstub.so.owner
-  /usr/lib/ocaml/3.10/stublibs/dllsdlttfstub.so
-  /usr/lib/ocaml/3.10/stublibs/dllsdlttfstub.so.owner
-  /usr/share/doc/ocaml-sdl-0.7.2/AUTHORS
-  /usr/share/doc/ocaml-sdl-0.7.2/COPYING
-  /usr/share/doc/ocaml-sdl-0.7.2/INSTALL
-  /usr/share/doc/ocaml-sdl-0.7.2/NEWS
-  /usr/share/doc/ocaml-sdl-0.7.2/README
-
-------------------
-
 Port Notes:
 
------ version 0.7.2-2 -----
-Rebuilt for ocaml-3.10.2.
-
------ version 0.7.2-1 -----
-Initial release for Cygwin.
+----- version 0.7.2-3 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
