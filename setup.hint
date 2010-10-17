@@ -1,5 +1,5 @@
 category: Audio Games OCaml X11
-requires: libSDL-devel libSDL_image-devel libSDL_mixer-devel libSDL_ttf-devel ocaml ocaml-lablgl
+requires: libSDL1.2_0 libSDL-devel libSDL_gfx13 libSDL_gfx-devel libSDL_image1.2_0 libSDL_image-devel libSDL_mixer1.2_0 libSDL_mixer-devel libSDL_ttf2.0_0 libSDL_ttf-devel ocaml-base ocaml-lablgl
 sdesc: "OCaml SDL bindings"
 ldesc: "The goal of OCamlSDL is to provide access the multimedia 
 hardware in the ML programming language with the help of the SDL 
