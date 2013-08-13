@@ -1,0 +1,21 @@
+inherit ocaml
+
+NAME="ocaml-sdl"
+VERSION=0.9.1
+RELEASE=1
+CATEGORY="OCaml"
+SUMMARY="OCaml SDL bindings"
+DESCRIPTION="The goal of OCamlSDL is to provide access the multimedia hardware
+in the ML programming language with the help of the SDL library. The Simple
+DirectMedia Layer is a generic API that provides low level access to audio,
+keyboard, mouse, and display framebuffer across multiple platforms."
+HOMEPAGE="http://ocamlsdl.sourceforge.net/"
+SRC_URI="mirror://sourceforge/ocamlsdl/ocamlsdl-${VERSION}.tar.gz"
+SRC_DIR="ocamlsdl-${VERSION}"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1
+}
